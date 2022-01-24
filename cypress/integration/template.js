@@ -1,5 +1,25 @@
 const { expect } = require("chai")
 
+//Auth method when the request contains bearer token
+//    let tokenValue;
+
+//beforeEach(() => {
+  //cy.intercept({
+    //method: 'GET',
+    //url: 'https://suite-api.lookingglasscyber.com:8000/v1/users/00u14cs79kvsiUaZx0h8/detail',
+  //}).as('authenticateEndpoint');
+
+  //cy.visit('https://suite.lookingglasscyber.com/user-management');
+  //cy.get('#okta-signin-username').type("eferreira@loopstudio.dev")
+  //cy.get('#okta-signin-password').type("Edugol202088")
+  //cy.get('#okta-signin-submit').click()
+  //cy.wait('@authenticateEndpoint').then(interception => {
+    //tokenValue = interception.request.headers.authorization;
+    //cy.log(tokenValue);
+  //})
+//})
+
+
   it('GET a single post', () => {
     cy.request({
       method: 'GET',
